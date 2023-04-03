@@ -2,7 +2,7 @@
 
 // import { RoomDetails } from './RoomDetails';
 import { NavButton } from '../common/NavButton';
-// import { cartManager } from '../cart/cart-manager';
+import { cartManager } from '../cart/cart-manager';
 
 export function Treatments() {
 

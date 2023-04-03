@@ -8,7 +8,7 @@ export function Cart() {
   const section = document.createElement('section');
 
   section.innerHTML = `
-    <h2>Cart</h2>
+    <h2>Twój koszyk</h2>
     <p>Przeglądaj zawartość koszyka:</p>
     <table class="table"></table>
   `;
@@ -16,9 +16,9 @@ export function Cart() {
   const tableHead = document.createElement('tr');
 
   tableHead.innerHTML = `
-    <th>Name</th>
-    <th>Quantity</th>
-    <th>Price</th>
+    <th>Nazwa</th>
+    <th>Liczba</th>
+    <th>Cena</th>
     <th></th>
   `;
 

@@ -31,11 +31,11 @@ export function RoomList() {
           `;
 
           const addToCartButton = document.createElement('button');
-          addToCartButton.innerText = 'Add to cart';
+          addToCartButton.innerText = 'Dodaj do koszyka';
           addToCartButton.classList.add('btn');
           addToCartButton.addEventListener('click', () => cartManager.addItem(room));
 
-          const detailsButton = NavButton('Read more...', () => RoomDetails(room.id), ['btn']);
+          const detailsButton = NavButton('Szczegóły...', () => RoomDetails(room.id), ['btn']);
           
           li.querySelector('footer').append(addToCartButton, detailsButton);
 
