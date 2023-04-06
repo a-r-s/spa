@@ -4,6 +4,8 @@ import { RoomDetails } from "./RoomDetails";
 import { NavButton } from "../common/NavButton";
 import { cartManager } from "../cart/cart-manager";
 
+
+
 export function RoomList() {
   const section = document.createElement("section");
   const ul = document.createElement("ul");
@@ -84,8 +86,12 @@ export function RoomList() {
       inputDateTo.addEventListener("change", () => {
         if (inputDateTo.value < inputDateFrom.value) {
           inputDateTo.value = inputDateFrom.value;
+          
         }
+
       });
+
+      
 
       section.querySelector(".loading").remove();
       section.append(ul);
