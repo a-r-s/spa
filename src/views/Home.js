@@ -1,11 +1,15 @@
 // Home.js
 export function Home() {
+  const section = document.createElement("section");
 
-  const section = document.createElement('section');
+  const img = document.createElement("img");
+  img.src = require("../assets/support.png");
+  img.style.width = "50vw"; // vw = view width
 
-  const img = document.createElement('img');
-  img.src = require('../assets/support.png');
-  img.style.width = '50vw'; // vw = view width
+  const dateElement = document.getElementById("footer-date");
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  dateElement.textContent = currentYear;
 
   section.innerHTML = `
     <h2>Home</h2>
@@ -16,5 +20,4 @@ export function Home() {
   section.append(img);
 
   return section;
-
 }
