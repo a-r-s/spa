@@ -6,8 +6,8 @@ import { Treatments } from "../views/Treatments";
 
 const navItems = [
   { name: "", component: Home, image: require("../assets/logo.png"), alt: 'logo' },
-  { name: "Rooms", component: RoomList },
-  { name: "Zabiegi", component: Treatments },
+  { name: "Zarezerwuj pokój", component: RoomList },
+  { name: "Zarezerwuj zabieg", component: Treatments },
   { name: "🛒", component: Cart },
 ];
 

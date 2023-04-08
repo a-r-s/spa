@@ -1,8 +1,7 @@
 // it-spa.js
 
 import 'bootstrap/dist/css/bootstrap.css';
-import 'now-ui-kit/assets/css/now-ui-kit.min.css';
-// import 'now-ui-kit/assets/demo.css';
+// import 'now-ui-kit/assets/css/now-ui-kit.min.css';
 import './it-spa.scss';
 
 import { Home } from './views/Home';
