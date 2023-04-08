@@ -3,12 +3,14 @@ import { Cart } from "../views/Cart";
 import { Home } from "../views/Home";
 import { RoomList } from "../views/RoomList";
 import { Treatments } from "../views/Treatments";
+import { RegistationUser } from "../user/RegistrationUser";
 
 const navItems = [
   { name: "", component: Home, image: require("../assets/logo.png"), alt: 'logo' },
   { name: "Zarezerwuj pokój", component: RoomList },
   { name: "Zarezerwuj zabieg", component: Treatments },
-  { name: "🛒", component: Cart },
+  { name: "Rejestracja", component: RegistationUser },
+  { name: "🛒", component: Cart }
 ];
 
 export function Nav() {

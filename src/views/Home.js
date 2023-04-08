@@ -3,10 +3,7 @@ export function Home() {
   const section = document.createElement("section");
   section.classList.add('hero-img-container', 'container-fluid');
 
-  const img = document.createElement("img");
-  img.src = require("../assets/support.png");
-  img.style.width = "10vw"; // vw = view width
-
+  //footer: show year
   const dateElement = document.getElementById("footer-date");
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -18,8 +15,6 @@ export function Home() {
            Tutaj każdy informatyk czuje się lepiej niż na home office
         </p>
   `;
-
-  // section.append(img);
 
   return section;
 }

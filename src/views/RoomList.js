@@ -8,7 +8,7 @@ import { cartManager } from "../cart/cart-manager";
 
 export function RoomList() {
   const section = document.createElement("section");
-  section.classList.add('container')
+  section.classList.add('container');
   const ul = document.createElement("ul");
   ul.classList.add("boxes");
 
