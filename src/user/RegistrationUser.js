@@ -18,7 +18,7 @@ export function RegistationUser() {
           <small id="emailHelp" class="form-text text-muted">Hasło powinno składać się z co najmniej 8 znaków, zawierać chociaż jedną cyfrę, wielką literę oraz znak specjalny.</small>
         </div>
         <br>
-        <button type="submit" id="send-form" class="btn btn-primary mb-2">Zarejestruj się</button>
+        <button type="submit" id="send-form" class="btn btn-primary mb-2 send-form-btn">Zarejestruj się</button>
       </form>
       <div class="col-lg-6 col-md-6 col-sm-12 registration-img" id="registration-img"></div>
     </div>
