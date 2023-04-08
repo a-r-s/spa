@@ -1,5 +1,3 @@
-// TreatmentsDetails.js
-
 export function TreatmentsDetails(treatmentId) {
 
   const section = document.createElement('section');
@@ -10,7 +8,6 @@ export function TreatmentsDetails(treatmentId) {
     <p class="loading">Ładuję zabieg...</p>
   `;
 
-  // pobieramy wybrany pokoj z serwera
   fetch(`http://localhost:3000/treatments/${treatmentId}`)
     .then(response => response.json())
     .then(treatments => {

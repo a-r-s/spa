@@ -10,7 +10,6 @@ export function RoomDetails(roomId) {
     <p class="loading">Ładuję pokój...</p>
   `;
 
-  // pobieramy wybrany pokoj z serwera
   fetch(`http://localhost:3000/rooms/${roomId}`)
     .then(response => response.json())
     .then(room => {
@@ -26,9 +25,7 @@ export function RoomDetails(roomId) {
           </p>
         `;
 
-        // usuwamy element mowiacy o ladowaniu
         section.querySelector('.loading').remove();
-        // podstawiamy gotowa liste z pokojami
         section.append(details);
     });
 

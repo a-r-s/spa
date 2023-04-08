@@ -1,5 +1,3 @@
-// cart-manager.js
-
 const key = 'it-spa-cart';
 
 export const cartManager = {
@@ -15,9 +13,7 @@ export const cartManager = {
     }
     else {
       content = JSON.parse(cart);
-      // np. { 'Pokój unarny': { price: 170, quantity: 2 } }
       
-      // if (content.hasOwnProperty(item.name))
       if (item.name in content) {
         content[item.name].quantity += 1;
       }
@@ -26,7 +22,6 @@ export const cartManager = {
           [item.name]: { price: item.price, quantity: 1 }
         };
 
-        // doklada nowy wpis (klucz: wartosc) do obiektu `content`
         Object.assign(content, newItem);
       }
     }
@@ -62,7 +57,6 @@ export const cartManager = {
     else {
       const content = JSON.parse(cart);
 
-      // entry to jest [KLUCZ, WARTOSC]
       return Object.entries(content).map(entry => {
         const [itemName, itemDetails] = entry;
 
@@ -84,7 +78,6 @@ export const cartManager = {
     else {
       const content = JSON.parse(cart);
 
-      // [{ price, quantity }, { price, quantity },  { price, quantity }, ...]
       return Object
               .values(content)
               .reduce((totalPrice, item) => {

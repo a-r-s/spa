@@ -1,9 +1,6 @@
-// RoomList.js
-
 import { RoomDetails } from "./RoomDetails";
 import { NavButton } from "../common/NavButton";
 import { cartManager } from "../cart/cart-manager";
-
 
 
 export function RoomList() {
@@ -91,9 +88,7 @@ export function RoomList() {
           
         }
 
-      });
-
-      
+      }); 
 
       section.querySelector(".loading").remove();
       section.append(ul);

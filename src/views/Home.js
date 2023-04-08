@@ -1,9 +1,7 @@
-// Home.js
 export function Home() {
   const section = document.createElement("section");
   section.classList.add('hero-img-container', 'container-fluid');
 
-  //footer: show year
   const dateElement = document.getElementById("footer-date");
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();

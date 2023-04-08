@@ -1,5 +1,3 @@
-// Treatments.js
-
 import { TreatmentsDetails } from './TreatmentsDetails';
 import { NavButton } from '../common/NavButton';
 import { cartManager } from '../cart/cart-manager';

@@ -1,5 +1,3 @@
-// Cart.js
-
 import { cartManager } from '../cart/cart-manager';
 import { NavButton } from '../common/NavButton';
 
@@ -54,7 +52,6 @@ export function Cart() {
     <td></td>
   `;
 
-  // kompletujemy zawartosc tabeli
   section.querySelector('.table').append(tableHead, ...tableRows, tableFooter);
 
   return section;
