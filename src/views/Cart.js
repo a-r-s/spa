@@ -6,11 +6,12 @@ import { NavButton } from '../common/NavButton';
 export function Cart() {
 
   const section = document.createElement('section');
+  section.classList.add('container');
 
   section.innerHTML = `
     <h2>Twój koszyk</h2>
     <p>Przeglądaj zawartość koszyka:</p>
-    <table class="table"></table>
+    <table class="table table-summary"></table>
   `;
 
   const tableHead = document.createElement('tr');
@@ -48,7 +49,7 @@ export function Cart() {
     <td></td>
     <td></td>
     <td>
-      Total = <strong>${cartManager.getTotalPrice()}</strong> PLN
+      Całość: <strong>${cartManager.getTotalPrice()}</strong> PLN
     </td>
     <td></td>
   `;

@@ -3,6 +3,7 @@
 export function TreatmentsDetails(treatmentId) {
 
   const section = document.createElement('section');
+  section.classList.add('container');
   
   section.innerHTML = `
     <h2>Zabieg</h2>
@@ -17,10 +18,10 @@ export function TreatmentsDetails(treatmentId) {
 
         details.innerHTML = `
           <h3>${treatments.name}</h3>
-          <p>Miejsce zabiegu: ${treatments.area}</p>
-          <p>Czas: ${treatments.time}</p>
-          <p>${treatments.description}</p>
-          <p>
+          <p class="box-details">Miejsce zabiegu: ${treatments.area}</p>
+          <p class="box-details">Czas: ${treatments.time} minut</p>
+          <p class="box-description">${treatments.description}</p>
+          <p class="box-price">
             <strong>${treatments.price.toFixed(2)} PLN</strong>
           </p>
         `;

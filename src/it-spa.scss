@@ -67,7 +67,6 @@ h2 {
 }
 
 h3 {
-    font-weight: 700;
     font-size: 40px;
     line-height: 48px;
 
@@ -171,6 +170,9 @@ main {
                 line-height: 24px;
                 margin-bottom: 8px;
             }
+
+          
+            
             
 
             footer {
@@ -197,14 +199,13 @@ main {
         }
     }
 
-
-.box-dates-container {
-    padding-bottom: 2em;
-    .box-dates-header {
-        padding-bottom: 1em;
+    .box-dates-container {
+        padding-bottom: 2em;
+        .box-dates-header {
+            padding-bottom: 1em;
+        }
+        
     }
-    
-}
 
 
 input[type='date'] {
@@ -219,24 +220,49 @@ input[type='date'] {
 
 
     article {
-        $bg-color-1: #fffcf2;
+        $bg-color-1: #fff;
         $bg-color-2: #fff6dd;
 
-        background: repeating-linear-gradient(45deg, $bg-color-1, $bg-color-1 10px, $bg-color-2 10px, $bg-color-2 20px);
-        box-shadow: #00576e 0 2px 8px 2px;
+        background: var(--color-background);
+        color: var(--color-text-black);
+        box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.14);
         margin    : 2em 1em;
-        padding   : 1rem;
+        padding   : 2em;
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            background: #ddc47d;
-            color     : white;
-            margin    : 0;
-            padding   : 1rem 0.5rem;
+        // h1,
+        // h2,
+        // h3,
+        // h4,
+        // h5,
+        // h6 {
+        //     // background: #ddc47d;
+        //     // color     : white;
+        //     margin    : 0;
+        //     padding   : 0 2em;
+        //     text-align: center;
+        // }
+
+        .box-name {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        
+        .box-price {
+            font-weight: 600;
+            margin-top: 1em;
+            font-size: 20px;
+            line-height: 32px;
+            color: var(--color-text-gray);
+        }
+
+        .box-details {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 8px;
         }
     }
 }
@@ -288,3 +314,9 @@ input[type='date'] {
 // end of home.js
 
 
+.table {
+    margin-top: 1em;
+    tr {
+
+    }
+}
