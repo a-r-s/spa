@@ -3,36 +3,68 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Pokój unarny",
+      "name": "Pokój z widokiem na serwerownię",
       "img": "../assets/support.png",
       "beds": 1,
       "guests": 1,
       "price": 170,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "description": "Niewielki pokój, który znajduje się w pobliżu centrum danych. Interesująca opcja zakwaterowania dla pracowników obsługi serwerowni, którzy muszą być na miejscu przez większość czasu. W pomieszczeniu się najważniejsze sprzęty i meble potrzebne do wygodnego pobytu. Na uwagę zasługuje widok z okna: imponująca serwerownia, gdzie przechowywane są tysiące serwerów, urządzeń sieciowych i innych sprzętów. W ciągu dnia na pewno będzie się tam działo wiele interesujących rzeczy, a nocą serwerownia zamienia się w malowniczą zatoczkę świateł."
     },
     {
       "id": 2,
-      "name": "Pokój binarny",
-      "beds": 1,
+      "name": "Pokój linuksiarzy",
+      "beds": 2,
       "guests": 2,
-      "price": 240,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "price": 340,
+      "description": "Przestronna i nowoczesna przestrzeń, zaprojektowana z myślą o komfortowej pracy dla użytkowników systemów operacyjnych opartych na Linuksie. Pokój ten charakteryzuje się minimalistycznym wykończeniem i skandynawskim stylem, co wprowadza spokojną i harmonijną atmosferę. Dodatkowym atutem pokoju linuksiarzy jest jego klimatyzacja, która zapewnia stałą i przyjemną temperaturę w pomieszczeniu. To szczególnie ważne, gdyż umożliwia to wygodną i efektywną pracę przez długi czas."
     },
     {
       "id": 3,
-      "name": "Pokój trójkowy",
-      "beds": 2,
-      "guests": 3,
-      "price": 290,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "name": "Pokój z zainstalowanym Windowsem",
+      "beds": 3,
+      "guests": 4,
+      "price": 666,
+      "description": "Pomieszczenie pełne okien, a więc bardzo jasne i przestronne W środku panuje przyjazna atmosfera, co sprzyja skupieniu i koncentracji podczas pracy. Pokój z zainstalowanym Windowsem jest również wyposażony w szybkie łącze internetowe, co umożliwia łatwy dostęp do różnych źródeł informacji oraz wymianę plików z innymi użytkownikami. Wszystko to pozwala na wydajną pracę oraz szybkie i efektywne rozwiązywanie różnych problemów."
     },
     {
       "id": 4,
-      "name": "Pokój czwórkowy",
+      "name": "Pokój Makintosza",
       "beds": 2,
-      "guests": 4,
-      "price": 340,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "guests": 2,
+      "price": 9999,
+      "description": "Pokój Makintosza to przestrzeń urządzona z myślą o użytkownikach komputerów firmy Apple. W środku panuje minimalistyczny i nowoczesny styl, który nawiązuje do charakterystycznego designu produktów Apple. Na biurkach znajdują się iMaki, MacBooki i inne komputery Apple, które pozwalają na wygodną pracę i rozrywkę. Wszystkie urządzenia są połączone w sieć, co umożliwia łatwą i szybką wymianę danych między nimi. W pomieszczeniu znajdują się również monitory i drukarki, które ułatwiają pracę użytkownikom."
+    },
+    {
+      "id": 5,
+      "name": "Pokój w chmurze obliczeniowej",
+      "beds": 1,
+      "guests": 2,
+      "price": 240,
+      "description": "Nowoczesne i bardzo futurystyczne pomieszczenie, które przypomina bardziej wnętrze z filmu science-fiction niż zwykły pokój hotelowy. Pokój ten znajduje się w centrum danych, gdzie przechowywane są tysiące serwerów i urządzeń sieciowych. Wnętrze pokoju jest bardzo minimalistyczne i eleganckie. Wszystkie meble i urządzenia są utrzymane w stylu hi-tech i futurystycznym. Pokój wyposażony jest w dwa wygodne łóżka, szafy oraz stoliki nocne. W pomieszczeniu znajduje się też biurko z ergonomicznymi krzesłami, które umożliwiają wygodne korzystanie z urządzeń elektronicznych. Wszystkie urządzenia w pokoju są podłączone do sieci internetowej i wirtualnej przestrzeni, co umożliwia dostęp do różnego rodzaju aplikacji i usług w chmurze. W pomieszczeniu znajdują się też ekrany, które umożliwiają przeglądanie różnych treści w sieci, a także konsola do gier.      "
+    },
+    {
+      "id": 6,
+      "name": "Pokój asemblera",
+      "beds": 2,
+      "guests": 3,
+      "price": 290,
+      "description": "Pokój zaprojektowany z myślą o pracy programistów, którzy specjalizują się w języku asembler. Jest to miejsce, gdzie pasjonaci informatyki mogą skoncentrować się na tworzeniu zaawansowanych programów i algorytmów. Na ścianach pokoju znajdują się plansze z różnymi schematami i diagramami, które ułatwiają projektowanie programów i algorytmów. W pomieszczeniu znajdują się także regały z różnego rodzaju podręcznikami, podręcznikami i czasopismami poświęconymi programowaniu i językowi asembler."
+    },
+    {
+      "id": 7,
+      "name": "Pokój w piwnicy",
+      "beds": 1,
+      "guests": 1,
+      "price": 190,
+      "description": "Niewielka przestrzeń o ograniczonej ilości naturalnego światła. Zlokalizowane w głębi budynku, zapewnia prywatność i spokój, co jest szczególnie istotne dla osób, które pracują w dziedzinie IT. To pomieszczenie zaprojektowane z myślą o funkcjonalności i komforcie pracy.  Oprócz podstawowego wyposażenia biurowego, w pokoju w piwnicy znajduje się wiele narzędzi IT i sprzętów niezbędnych do pracy. Są to między innymi serwery, switch'e, kable oraz zestawy naprawcze i diagnostyczne. Wszystkie narzędzia są łatwo dostępne i dobrze zorganizowane, co ułatwia pracę i zwiększa efektywność działania. Wyposażenie i organizacja przestrzeni pozwalają na wydajną pracę i skuteczne rozwiązywanie problemów związanych z administracją systemów informatycznych."
+    },
+    {
+      "id": 8,
+      "name": "Pokój RGB",
+      "beds": 2,
+      "guests": 3,
+      "price": 400,
+      "description": "Kolorowe oświetlenie stanowi tu główny element dekoracyjny. Pokój RGB to przestronne pomieszczenie, którego wystrój składa się z elementów oświetleniowych w różnych kolorach. W środku panuje nastrojowa i przyjemna atmosfera, która zapewnia relaks i odprężenie. Na ścianach znajdują się panele LED, które emitują światło w różnych kolorach, dzięki czemu pokój zyskuje dynamiczny i oryginalny wygląd. Kolorowe oświetlenie można regulować za pomocą pilota lub specjalnej aplikacji na smartfonie, co pozwala na dostosowanie kolorów do własnych preferencji i nastroju."
     }
   ],
   "treatments": [
