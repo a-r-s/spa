@@ -8,17 +8,18 @@ import { cartManager } from "../cart/cart-manager";
 
 export function RoomList() {
   const section = document.createElement("section");
+  section.classList.add('container')
   const ul = document.createElement("ul");
   ul.classList.add("boxes");
 
   section.innerHTML = `
     <h2>Lista dostępnych pokoi</h2>
-
-    <p>Określ daty pobytu:</p>
-    <input type="date" id="date-from" value="">
-    <input type="date" id="date-to" value="">
-
-    <p>Sprawdź ofertę pokoi.</p>
+    <div class="box-dates-container">
+      <p class="box-dates-header">Określ daty pobytu:</p>
+      <input type="date" id="date-from" value="">
+      <input type="date" id="date-to" value="">
+    </div>
+    <p>Dostępne pokoje:</p>
     <p class="loading">Ładuję listę pokoi...</p>
   `;
 
@@ -28,14 +29,11 @@ export function RoomList() {
     .then((rooms) => {
       const lis = rooms.map((room) => {
         const li = document.createElement("li");
-        li.classList.add('box');
 
-        li.innerHTML = `
-            
-            <p class="news-title">${room.name}</p>
-            <p class="news-date">
-              <strong>${room.price.toFixed(2)} PLN</strong>
-            </p>
+        li.innerHTML = `   
+            <p class="box-name">${room.name}</p>
+            <p class="box-description">${room.description}</p>
+            <p class="box-price">${room.price.toFixed(2)} PLN</p>
             <footer></footer>
           `;
 

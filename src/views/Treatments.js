@@ -7,11 +7,12 @@ import { cartManager } from '../cart/cart-manager';
 export function Treatments() {
 
   const section = document.createElement('section');
+  section.classList.add('container')
   const ul = document.createElement('ul');
   
   section.innerHTML = `
     <h2>Zabiegi</h2>
-    <p>Sprawdź listę zabiegów:</p>
+    <p>Sprawdź listę dostępnych zabiegów:</p>
     <p class="loading">Ładuję listę zabiegów...</p>
   `;
 
@@ -22,22 +23,23 @@ export function Treatments() {
           const li = document.createElement('li');
 
           li.innerHTML = `
-            <h4>${treatments.name}</h4>
+            <p class="box-name">${treatments.name}</p>
+            <p class="box-description">${treatments.description}</p>
             <p>
               <strong>Czas trwania: ${treatments.time} minut</strong>
             </p>
-            <p>
-              <strong>${treatments.price.toFixed(2)} PLN</strong>
+            <p class="box-price">
+             ${treatments.price.toFixed(2)} PLN
             </p>
             <footer></footer>
           `;
 
           const addToCartButton = document.createElement('button');
-          addToCartButton.innerText = 'Add to cart';
+          addToCartButton.innerText = 'Dodaj do koszyka';
           addToCartButton.classList.add('btn');
           addToCartButton.addEventListener('click', () => cartManager.addItem(treatments));
 
-          const detailsButton = NavButton('Read more...', () => RoomDetails(treatments.id), ['btn']);
+          const detailsButton = NavButton('Szczegóły...', () => RoomDetails(treatments.id), ['btn']);
           
           li.querySelector('footer').append(addToCartButton, detailsButton);
 
