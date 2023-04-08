@@ -23,7 +23,6 @@ export function RoomList() {
     <p class="loading">Ładuję listę pokoi...</p>
   `;
 
-  // pobieramy liste pokoi z serwera
   fetch("http://localhost:3000/rooms")
     .then((response) => response.json())
     .then((rooms) => {
@@ -32,8 +31,10 @@ export function RoomList() {
 
         li.innerHTML = `   
             <p class="box-name">${room.name}</p>
+            <p class="box-details">Liczba gości: ${room.guests}; Liczba łózek: ${room.beds}</p>
             <p class="box-description">${room.description}</p>
             <p class="box-price">${room.price.toFixed(2)} PLN</p>
+           
             <footer></footer>
           `;
 
