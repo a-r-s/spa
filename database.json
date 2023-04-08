@@ -4,6 +4,7 @@
     {
       "id": 1,
       "name": "Pokój unarny",
+      "img": "../assets/support.png",
       "beds": 1,
       "guests": 1,
       "price": 170,

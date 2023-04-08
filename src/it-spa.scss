@@ -127,10 +127,14 @@ main {
         padding   : 0;
 
         li {
-            background-color: #1791b3;
-            box-shadow      : #00576e 0 2px 8px 2px;
+            background-color: var(--color-background);
+            // box-shadow      : #00576e 0 2px 8px 2px;
+            box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.14);
             color           : #fff;
-            padding         : 1rem;
+            padding         : 2rem;
+            margin-top: 1em;
+            min-width: 25%;
+            margin-right: 1em;
 
             footer {
                 display        : flex;
@@ -148,10 +152,6 @@ main {
                 border    : 1px solid #fff;
                 color     : #fff;
             }
-        }
-
-        li+li {
-            margin-top: 2rem;
         }
     }
 
@@ -224,3 +224,16 @@ main {
 
 // end of home.js
 
+
+//rooms
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.box {
+    
+}

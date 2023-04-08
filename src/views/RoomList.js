@@ -9,6 +9,7 @@ import { cartManager } from "../cart/cart-manager";
 export function RoomList() {
   const section = document.createElement("section");
   const ul = document.createElement("ul");
+  ul.classList.add("boxes");
 
   section.innerHTML = `
     <h2>Lista dostępnych pokoi</h2>
@@ -27,10 +28,12 @@ export function RoomList() {
     .then((rooms) => {
       const lis = rooms.map((room) => {
         const li = document.createElement("li");
+        li.classList.add('box');
 
         li.innerHTML = `
-            <h4>${room.name}</h4>
-            <p>
+            
+            <p class="news-title">${room.name}</p>
+            <p class="news-date">
               <strong>${room.price.toFixed(2)} PLN</strong>
             </p>
             <footer></footer>

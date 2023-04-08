@@ -4,10 +4,9 @@ export function Home() {
   section.classList.add('hero-img-container', 'container-fluid');
 
   const img = document.createElement("img");
-  // img.src = require("../assets/support.png");
-  img.style.width = "50vw"; // vw = view width
+  img.src = require("../assets/support.png");
+  img.style.width = "10vw"; // vw = view width
 
-  const hideFooter = document.querySelector(".text-muted");
   const dateElement = document.getElementById("footer-date");
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
