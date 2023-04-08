@@ -1,6 +1,6 @@
 // Treatments.js
 
-// import { RoomDetails } from './RoomDetails';
+import { TreatmentsDetails } from './TreatmentsDetails';
 import { NavButton } from '../common/NavButton';
 import { cartManager } from '../cart/cart-manager';
 
@@ -39,7 +39,7 @@ export function Treatments() {
           addToCartButton.classList.add('btn');
           addToCartButton.addEventListener('click', () => cartManager.addItem(treatments));
 
-          const detailsButton = NavButton('Szczegóły...', () => RoomDetails(treatments.id), ['btn']);
+          const detailsButton = NavButton('Szczegóły...', () => TreatmentsDetails(treatments.id), ['btn']);
           
           li.querySelector('footer').append(addToCartButton, detailsButton);
 
